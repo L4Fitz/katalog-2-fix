@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFEEBB;
+  text-decoration: none;
+}
+
+.skip-link {
+  position: relative;
+  top: -36px;
+  left: 0;
+  padding: 8px;
+  background-color: #bbe4e9;
+  color: yellow;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 170px;
+}
+
+.like {
+  display: inline-flex;
+  align-items: center;
+  width: 82px;
+  height: 78px;
+  justify-content: center;
+  background-color: #ff6f3c;
+  position: fixed;
+  bottom: 8px;
+  font-size: 44px;
+  right: 21px;
+  border-radius: 50%;
+  border:#000;
+  color: white;
+  cursor: pointer;
+}
+
+.app-bar {
+  padding: 8px 13px;
+  background-color: #ffc93c;
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
+  top: 0;
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  font-size: 38px;
+  padding: 15px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar__brand {
+  display: block;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 100px;
+  left: -173px; 
+  width: 160px;
+  transition: ease-in-out 0.2s;
+  padding: 18px;
+  background-color: #ffc93c;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 44px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.hero {
+  display:flex;
+  background-position: center;
+  text-align: center;
+  background-color: black;
+  min-height: 450px;
+  align-items: center;
+}
+
+.hero-brand {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero-title {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-weight: 600;
+  font-size: 48px;
+  font-style: oblique;
+  padding-top: 70px;
+}
+
+.hero-desc {
+  color: white;
+  text-shadow: 1px 2px black;
+  margin-top: 44px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.explore-list {
+  width: 100%;
+}
+
+.restaurants {
+  display: contents;
+  margin: 34px;
+  gap: 28px;
+}
+
+.explore-title {
+  text-align: justify;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.restaurants {
+  width: 100%;
+  text-align: left;
+  margin: 50px auto;
+}
+
+.list-item {
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #FFBFA9;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5em;
+  width: 100%;
+}
+
+.list-city a {
+  margin-top: 44px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.list-city a:hover {
+  color: #FF55BB;
+}
+
+.list-name {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.list-thumb {
+  width: 100%;
+  border-radius: 32px;
+}
+
+.detail-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 35px;
+  background-color: #D0F5BE ;
+  border-radius: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+.detail-name {
+  padding-top: 50px;
+  font-size: 60px;
+}
+
+.detail-categories {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
+.detail-thumb {
+  width: 85%;
+  padding: 20px;
+  border-radius: 40em;
+}
+
+.detail-card2 {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.detail-city {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.detail-address {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.detail-desc {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.detail-menus {
+  list-style: none;
+}
+
+.detail-foods h5 {
+  padding-top: 30px;
+  line-height: 2.8em;
+  font-size: 20px;
+}
+
+.detail-drinks h5 {
+  padding-top: 28px;
+  line-height: 2.8em;
+  font-size: 20px;
+}
+
+.detail-review h6 {
+  padding-top: 45px;
+  line-height: 2.8em;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #FF8400 ;
+  text-align: center;
+  width: 100%;
+  color: black;
+  padding: 1.5em;
+  line-height: 1.2;
+}
